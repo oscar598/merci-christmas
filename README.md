@@ -38,7 +38,7 @@ format as the app's `templates.js`, so they can be moved into the app when the C
 
 ## Assets
 
-- `assets/img/hero-christmas.jpg`: Christmas hero photo (night village with a lit tree).
+- `assets/img/hero-christmas.jpg`: Christmas hero photo (fireplace, stockings and a lit tree).
 - `assets/img/hero.jpg`: Thanksgiving hero photo (lake view).
 - `assets/fonts/instrumentserif-*.woff2`: Instrument Serif, SIL Open Font License 1.1
   (https://github.com/google/fonts/tree/main/ofl/instrumentserif).

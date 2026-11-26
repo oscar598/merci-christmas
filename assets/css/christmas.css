@@ -1,11 +1,11 @@
 /* merci. Christmas edition: layered on top of landing.css */
 .xmas { --bg: #06070C; --or: #E0483E; --or2: #F5C867; --green: #3E8E66; }
 
-/* hero photo: night village with a lit tree; already dark, so only a light scrim */
-.xmas .photo { background-image: url(../img/hero-christmas.jpg); background-position: center 38%; inset: 0 0 4% 0; }
+/* hero photo: fireplace, stockings and a lit tree. It's bright and warm, so the scrim is heavier at the top for the headline */
+.xmas .photo { background-image: url(../img/hero-christmas.jpg); background-position: 60% 40%; inset: 0 0 4% 0; }
 .xmas .sky::after { z-index: 2;
-  background: linear-gradient(180deg, rgba(6, 7, 12, .45) 0%, rgba(6, 7, 12, .15) 28%, rgba(6, 7, 12, .1) 50%, rgba(6, 7, 12, .7) 78%, var(--bg) 94%),
-              radial-gradient(46% 34% at 50% 34%, rgba(6, 7, 12, .62), transparent 78%); }
+  background: linear-gradient(180deg, rgba(6, 7, 12, .72) 0%, rgba(6, 7, 12, .5) 30%, rgba(6, 7, 12, .3) 52%, rgba(6, 7, 12, .75) 78%, var(--bg) 94%),
+              radial-gradient(48% 36% at 50% 34%, rgba(6, 7, 12, .55), transparent 78%); }
 .xmas .hero-copy h1, .xmas .hero-copy p { text-shadow: 0 2px 24px rgba(0, 0, 0, .55); }
 .snowfall { position: absolute; inset: 0; width: 100%; height: 100%; z-index: 3; pointer-events: none; }
 
