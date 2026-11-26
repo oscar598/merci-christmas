@@ -1,0 +1,88 @@
+/* merci. Christmas edition: layered on top of landing.css */
+.xmas { --bg: #06070C; --or: #E0483E; --or2: #F5C867; --green: #3E8E66; }
+
+/* hero photo: night village with a lit tree; already dark, so only a light scrim */
+.xmas .photo { background-image: url(../img/hero-christmas.jpg); background-position: center 38%; inset: 0 0 4% 0; }
+.xmas .sky::after { z-index: 2;
+  background: linear-gradient(180deg, rgba(6, 7, 12, .45) 0%, rgba(6, 7, 12, .15) 28%, rgba(6, 7, 12, .1) 50%, rgba(6, 7, 12, .7) 78%, var(--bg) 94%),
+              radial-gradient(46% 34% at 50% 34%, rgba(6, 7, 12, .62), transparent 78%); }
+.xmas .hero-copy h1, .xmas .hero-copy p { text-shadow: 0 2px 24px rgba(0, 0, 0, .55); }
+.snowfall { position: absolute; inset: 0; width: 100%; height: 100%; z-index: 3; pointer-events: none; }
+
+
+.count { font-style: normal; margin-left: 4px; padding: 2px 8px; border-radius: 5px; background: rgba(224, 72, 62, .9); color: #fff; font-size: 11px; font-weight: 600; }
+.count:empty { display: none; }
+.tag-dot { background-color: #E0483E; }
+
+/* snow inside a card preview */
+.xsnow { position: absolute; inset: 0; z-index: 100; pointer-events: none; opacity: .9;
+  background-image: radial-gradient(2.4px 2.4px at 12% 10%, #fff, transparent), radial-gradient(1.8px 1.8px at 32% 40%, #fff, transparent), radial-gradient(3px 3px at 56% 22%, #fff, transparent),
+  radial-gradient(2px 2px at 78% 58%, #fff, transparent), radial-gradient(2.6px 2.6px at 90% 14%, #fff, transparent), radial-gradient(1.8px 1.8px at 44% 76%, #fff, transparent), radial-gradient(2.2px 2.2px at 20% 64%, #fff, transparent);
+  background-size: 200px 200px; animation: cardsnow 9s linear infinite; }
+@keyframes cardsnow { to { background-position: 30px 200px; } }
+
+/* paper vs merci. */
+.why { margin-top: 140px; }
+.compare { display: grid; grid-template-columns: 1fr 1.15fr; gap: 18px; }
+.compare .col { border-radius: 18px; padding: 28px 30px; border: 1px solid var(--line); }
+.compare .paper { background: rgba(255, 255, 255, .02); }
+.compare .ours { background: linear-gradient(160deg, rgba(224, 72, 62, .16), rgba(62, 142, 102, .1)), var(--glass); }
+.compare h3 { margin: 0 0 18px; font-size: 17px; font-weight: 500; display: flex; align-items: center; gap: 10px; }
+.compare h3 img { width: 26px; height: 26px; border-radius: 7px; }
+.compare ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 13px; font-size: 14px; }
+.compare li { display: flex; gap: 12px; align-items: flex-start; }
+.compare li::before { flex: none; width: 20px; height: 20px; border-radius: 6px; display: grid; place-items: center; font-size: 11px; margin-top: 1px; }
+.compare .paper li { color: var(--mut); }
+.compare .paper li::before { content: '–'; background: rgba(255, 255, 255, .06); color: var(--mut2); }
+.compare .ours li::before { content: '✓'; background: rgba(245, 200, 103, .16); color: var(--or2); }
+.stats { display: grid; grid-template-columns: repeat(3, 1fr); margin-top: 18px; border: 1px solid var(--line); border-radius: 18px; overflow: hidden; }
+.stats div { padding: 24px 26px; }
+.stats div + div { border-left: 1px solid var(--line); }
+.stats b { display: block; font: 400 44px/1 var(--serif); font-style: italic; color: var(--or2); }
+.stats span { display: block; margin-top: 8px; font-size: 12.5px; color: var(--mut); }
+
+/* how-it-works backgrounds, wintered */
+.xmas .s1::before { background: radial-gradient(80% 70% at 50% 110%, #8E1A20, transparent 70%), linear-gradient(180deg, #1c1a24, #2b1e24); }
+.xmas .s2::before { background: radial-gradient(70% 60% at 30% 0%, #3b4a6e, transparent 70%), linear-gradient(180deg, #1c2030, #12141c); }
+.xmas .s3::before { background: radial-gradient(80% 60% at 80% 100%, #2F6B4F, transparent 70%), linear-gradient(200deg, #232a2e, #121518); }
+
+/* gift panel in Christmas colors */
+.xmas .g-panel::before { background: radial-gradient(90% 70% at 70% 0%, rgba(184, 38, 43, .45), transparent 70%), radial-gradient(70% 60% at 0% 100%, rgba(47, 107, 79, .45), transparent 70%); }
+.xmas .unwrap { background: repeating-linear-gradient(135deg, #B8262B 0 18px, #D2383A 18px 36px); }
+.xmas .ribbon { background: linear-gradient(90deg, transparent 46%, #F5C867 46%, #F5C867 54%, transparent 54%), linear-gradient(180deg, transparent 42%, #F5C867 42%, #F5C867 58%, transparent 58%); }
+
+/* early access */
+.join { margin-top: 140px; }
+.join-box { position: relative; overflow: hidden; text-align: center; padding: 56px 32px 44px; border-radius: 26px;
+  background: radial-gradient(60% 80% at 50% 0%, rgba(224, 72, 62, .28), transparent 70%), radial-gradient(50% 70% at 100% 100%, rgba(62, 142, 102, .22), transparent 70%), var(--glass); }
+.join-box h2 { margin: 14px 0 0; font-weight: 500; font-size: clamp(30px, 3.4vw, 42px); line-height: 1.08; letter-spacing: -.03em; }
+.join-box h2 em { font-size: 1.1em; }
+.join-box > p { color: var(--mut); max-width: 500px; margin: 16px auto 0; font-size: 14px; }
+.signup { display: flex; gap: 10px; max-width: 460px; margin: 28px auto 0; }
+.signup input { flex: 1; min-width: 0; height: 46px; padding: 0 16px; border-radius: 10px; border: 1px solid rgba(255, 255, 255, .16); background: rgba(0, 0, 0, .35); color: #fff; font: inherit; font-size: 14.5px; outline: none; }
+.signup input:focus { border-color: var(--or2); box-shadow: 0 0 0 3px rgba(245, 200, 103, .18); }
+.signup button { border: 0; cursor: pointer; font: inherit; font-weight: 600; }
+.signup button:disabled { opacity: .6; }
+.signup-msg { min-height: 1.5em; margin: 12px 0 0; font-size: 13px; color: var(--or2); }
+.join-box .ctas { justify-content: center; margin-top: 18px; }
+.join-alt.secondary .btn-w { background: rgba(255, 255, 255, .08); color: #fff; border: 1px solid rgba(255, 255, 255, .14); box-shadow: none; }
+.join-box small { display: block; margin-top: 18px; font-size: 12px; }
+
+/* CTA: bear in a Santa hat */
+.xmas .cta-box { background: radial-gradient(70% 90% at 85% 80%, rgba(224, 72, 62, .5), transparent 70%), radial-gradient(50% 60% at 60% 100%, rgba(62, 142, 102, .3), transparent 70%), linear-gradient(160deg, #1d1a22, #0d0c12 60%); }
+.bear-wrap { position: relative; justify-self: end; align-self: end; width: 100%; max-width: 420px; animation: sway 5s ease-in-out infinite; transform-origin: 50% 100%; }
+.bear-wrap .bear { animation: none; max-width: none; }
+.santa-hat { position: absolute; left: 19%; top: -6.5%; width: 34%; transform: rotate(-12deg); filter: drop-shadow(0 6px 8px rgba(0, 0, 0, .3)); }
+
+@media (max-width: 980px) {
+  .compare { grid-template-columns: 1fr; }
+  .bear-wrap { justify-self: center; max-width: 300px; }
+}
+@media (max-width: 640px) {
+  .why, .join { margin-top: 96px; }
+  .stats { grid-template-columns: 1fr; }
+  .stats div + div { border-left: 0; border-top: 1px solid var(--line); }
+  .compare .col { padding: 22px; }
+  .signup { flex-direction: column; }
+  .join-box { padding: 40px 20px 32px; }
+}
