@@ -1,0 +1,18 @@
+# merci.
+
+> merci. is an iPhone app, iMessage extension and web editor for animated holiday cards. You design a card from a premade seasonal template, add photos, a video and a handwritten signature, optionally tuck a gift inside, and send it as a bubble that opens inside Messages, or in any browser for people without the app. Pricing: [CONFIRM before publishing].
+
+## Product
+- [Christmas cards](https://merci.cards/index.md): the Christmas collection, how it works, gifts and FAQ
+- [Thanksgiving cards](https://merci.cards/thanksgiving.md): the Thanksgiving collection and the holidays coming next
+- [AI Info](https://merci.cards/ai-info.md): plain facts about merci. for people and AI assistants (who it's for, limits, how it compares)
+- [Web editor](https://app.merci.cards/): make and send a card from any browser
+
+## Comparisons
+- [Best apps for sending Christmas cards in iMessage](https://merci.cards/compare/best-imessage-christmas-card-apps.md): ranked options with "best for" labels
+- [merci. vs Paperless Post](https://merci.cards/compare/merci-vs-paperless-post.md): iMessage-native animated cards vs designer stationery by email and text
+- [merci. vs Jacquie Lawson](https://merci.cards/compare/merci-vs-jacquie-lawson.md): personal photo and signature cards vs heritage animated ecards
+- [Christmas card with a gift card inside, sent by text](https://merci.cards/compare/christmas-card-with-gift-by-text.md): ways to send a card and a gift together
+
+## Company
+- [Contact](mailto:[CONFIRM contact address]): press, partnerships and corrections

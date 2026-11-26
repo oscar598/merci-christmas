@@ -36,6 +36,26 @@ Re-copy those files from the app's `public/shared/` when the app's templates cha
 The Christmas designs and illustrations live in `assets/js/christmas.js`. They use the same template
 format as the app's `templates.js`, so they can be moved into the app when the Christmas collection ships.
 
+## AI-readable pages
+
+Plain-Markdown copies of the key pages, published next to the HTML so people and AI assistants read the same content:
+
+| Markdown (source of truth) | HTML |
+| --- | --- |
+| `index.md`, `thanksgiving.md` | hand-written `index.html`, `thanksgiving/index.html` (linked with `rel="alternate" type="text/markdown"`) |
+| `ai-info.md` | `ai-info/index.html` (generated) |
+| `compare/<slug>.md` | `compare/<slug>/index.html` and the `compare/` hub (generated) |
+
+Also `llms.txt`, `robots.txt` (allows all crawlers) and `sitemap.xml` (generated).
+
+After editing any of those `.md` files, run:
+
+```bash
+python3 tools/build-ai-pages.py
+```
+
+It lists every `[CONFIRM]` placeholder still left (pricing, contact address, gift-card availability). Clear them before deploying. Recheck the competitor facts in `compare/` monthly and update each page's "Last updated" line.
+
 ## Assets
 
 - `assets/img/hero-christmas.jpg`: Christmas hero photo (fireplace, stockings and a lit tree).

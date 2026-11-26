@@ -1,0 +1,6 @@
+# merci. welcomes search engines and AI assistants. Everything here is public
+# and identical for people and crawlers.
+User-agent: *
+Allow: /
+
+Sitemap: https://merci.cards/sitemap.xml
